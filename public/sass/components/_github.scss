@@ -1,0 +1,32 @@
+.github-section {
+  font-size: $sml-font-size;
+  margin-top: -16rem;
+
+  h2 {
+    text-align: right;
+  }
+
+  ul {
+    height: 700px;
+    overflow: scroll;
+
+    li {
+      padding: 2.2rem 0;
+      border-bottom: 1px solid rgb(228, 228, 228);
+
+      &:last-child {
+        border-bottom: none;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  a {
+    color: rgb(0, 0, 238);
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

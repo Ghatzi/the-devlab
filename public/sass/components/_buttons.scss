@@ -1,0 +1,45 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    padding: 0.6rem;
+    display: inline-block;
+    border-radius: 0.6rem;
+    position: relative;
+    color: $color-white;
+    font-size: $default-font-size;
+    border: none;
+    transition: all 0.2s;
+  }
+
+  &:hover {
+    color: $color-white;
+    transform: translateY(-3px);
+    box-shadow: $box-shadow-light;
+  }
+
+  &--green {
+    background: linear-gradient(
+      -70deg,
+      $color-secondary-light 80%,
+      $color-secondary-dark 20%
+    );
+  }
+
+  &--pink {
+    background: linear-gradient(-70deg, $color-tertiary 80%, $color-white 20%);
+  }
+
+  &::after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 0.6rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+}

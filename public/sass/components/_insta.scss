@@ -1,0 +1,55 @@
+.insta-feature {
+  margin-top: -8vh;
+  padding-top: 14rem;
+  padding-bottom: 14rem;
+
+  background: linear-gradient(-70deg, $color-white 80%, $color-tertiary 20%);
+
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    -webkit-clip-path: polygon(0% 25vh, 100% 0%, 100% 92%, 0% 100%);
+    clip-path: polygon(0% 25vh, 100% 0%, 100% 92%, 0% 100%);
+
+    @include respond(tab-land) {
+      margin-top: 0;
+      -webkit-clip-path: polygon(0% 10vh, 100% 0%, 100% 98%, 0% 100%);
+      clip-path: polygon(0% 10vh, 100% 0%, 100% 98%, 0% 100%);
+    }
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  li {
+    display: flex;
+    flex-direction: column;
+
+    background: linear-gradient(
+      70deg,
+      $color-grey-light 80%,
+      $color-tertiary 20%
+    );
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 0.6rem;
+    box-shadow: $box-shadow-dark;
+    transition: all 0.2s;
+
+    img {
+      border-radius: 0.6rem;
+      width: 230px;
+    }
+
+    p {
+      font-size: $sml-font-size;
+      word-wrap: break-word;
+      width: 230px;
+    }
+
+    a {
+      margin-top: auto;
+    }
+  }
+}

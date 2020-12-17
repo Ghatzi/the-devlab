@@ -1,0 +1,51 @@
+.courses-feature {
+  padding-top: 0;
+  padding-bottom: 22rem;
+  background-color: $color-grey-light;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    height: 800px;
+    overflow: scroll;
+  }
+
+  li {
+    margin: 1rem;
+    box-shadow: $box-shadow-light;
+    width: 260px;
+    word-wrap: break-word;
+
+    img {
+      width: 260px;
+    }
+  }
+
+  .course-details {
+    height: 250px;
+
+    @include respond(tab-land) {
+      height: 180px;
+    }
+
+    h4 {
+      font-weight: bold;
+      padding: 0.4rem 1rem;
+    }
+
+    p {
+      font-size: $sml-font-size;
+      padding: 0.4rem 1rem;
+    }
+  }
+
+  .status {
+    border-top: 1px solid $color-grey-med;
+    width: 80%;
+    margin: 1rem auto;
+    text-align: right;
+    font-size: $sml-font-size;
+  }
+}

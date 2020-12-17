@@ -1,0 +1,51 @@
+.footer-section {
+  background-color: $color-grey-dark;
+  color: $color-white;
+  font-size: $sml-font-size;
+  padding-bottom: 3rem;
+
+  &__nav {
+    display: flex;
+    flex-wrap: wrap;
+
+    ul {
+      margin: 0 4rem 0 0;
+    }
+
+    li {
+      padding: 0.2rem;
+
+      a {
+        &:hover {
+          color: $color-grey-med;
+        }
+      }
+    }
+  }
+
+  &__end {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+    margin-top: 2rem;
+  }
+
+  .social-icons {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+
+      margin-top: 2rem;
+
+      li {
+        padding-right: 5px;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}
