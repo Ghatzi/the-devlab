@@ -228,6 +228,9 @@ h2 {
 .github-section {
   font-size: 1.3rem;
   margin-top: -16rem; }
+  @media only screen and (max-width: 75em) {
+    .github-section {
+      margin-top: -12rem; } }
   .github-section h2 {
     text-align: right; }
   .github-section ul {
@@ -355,5 +358,12 @@ h2 {
     .intro-feature {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 52vh, 0 90%);
       clip-path: polygon(0 0, 100% 0, 100% 52vh, 0 90%); } }
+  @media only screen and (max-width: 75em) {
+    .intro-feature {
+      height: 95vh; }
+      @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+        .intro-feature {
+          -webkit-clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 90%);
+          clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 90%); } } }
   .intro-feature a {
     color: inherit; }

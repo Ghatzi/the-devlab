@@ -2,6 +2,10 @@
   font-size: $sml-font-size;
   margin-top: -16rem;
 
+  @include respond(tab-land) {
+    margin-top: -12rem;
+  }
+
   h2 {
     text-align: right;
   }
