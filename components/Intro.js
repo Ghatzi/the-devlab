@@ -11,8 +11,8 @@ const Intro = () => (
       the-DevLab was developed as a place where I can showcase some of my work
       to recruiters and clients. During my time as a developer I have worked
       with many languages including PHP, ASP, JavaScript, jQuery, XSLT, CSS and
-      more however my main areas of focus currently are React, Next.js, SASS
-      &amp; Node.js.
+      more however currently I'm focused on developing using React, Next.js,
+      SASS &amp; Node.js.
     </p>
     <p>
       Below you will find my GitHub repositories as well as the latest Instagram
